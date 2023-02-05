@@ -1,0 +1,18 @@
+{% extends "layout.html"%}
+{% block content %}
+<div class="frame">
+    <form action="{{ url_for('bmi')}}" method="post">
+        <h2>Body Mass Index</h2>
+        <br>
+        <input type ="text" placeholder="Enter height in cm" name = "height" required = "required">
+        <br>
+        <input type ="text" placeholder="Enter weight in lb" name = "weight" required = "required">
+        <br>
+        <p> {{prediction_text}}</p>
+        <div class = "bigbutton">
+            <input class="button-29" type ="submit" value = "Calculate" id = "test">
+        </div>
+        
+    </form>
+ </div>  
+{% endblock %}

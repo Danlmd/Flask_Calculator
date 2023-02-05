@@ -1,0 +1,26 @@
+{% extends "layout.html"%}
+{% block content %}
+<div class="frame">
+      <form action="{{ url_for('classic')}}" method="post">
+          <h2>Classic</h2>
+          <br>
+          <input type ="text" placeholder="Enter the first number" name = "a" required = "required">
+          <br>
+          <input type ="text" placeholder="Enter the second number" name = "b" required = "required">
+          <br>
+          <select placeholder="Enter the operator" name = "operation" required = "required">
+              <option value="" disabled selected>Select operation</option>
+              <option value="+">+</option>
+              <option value="-">-</option>
+              <option value="/">÷</option>
+              <option value="*">x</option>
+            </select>
+          <br>
+          <p>{{prediction_text}}</p>
+          <div class = "bigbutton">
+              <input class="button-29" type ="submit" value = "Calculate" id = "test">
+          </div>
+          
+      </form>
+   </div>  
+{% endblock %}

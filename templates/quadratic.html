@@ -1,0 +1,20 @@
+{% extends "layout.html"%}
+{% block content %}
+<div class="frame">
+    <form action="{{ url_for('quadratic')}}" method="post">
+        <h2>Quadratic Formula</h2>
+        <br>
+        <input type ="text" placeholder="Enter a" name = "a" required = "required">
+        <br>
+        <input type ="text" placeholder="Enter b" name = "b" required = "required">
+        <br>
+        <input type ="text" placeholder="Enter c" name = "c" required = "required">
+        <br>
+        {{prediction_text}}
+        <div class = "bigbutton">
+            <input class="button-29" type ="submit" value = "Calculate" id = "test">
+        </div>
+        
+    </form>
+ </div>  
+{% endblock %}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% if title %}
+        <title>Calculator - {{title}}</title>
+    {% else %}
+        <title>Calculator</title>
+    {%endif%}
+    <link rel = "stylesheet" href ="{{url_for('static', filename= 'main.css')}}">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+       </head>
+       <body>
+         <input type="checkbox" id="check">
+         <label for="check">
+           <i class="fas fa-bars" id="btn"></i>
+           <i class="fas fa-times" id="cancel"></i>
+         </label>
+         <div class="sidebar">
+           <header>Menu</header>
+           <a href="classic" >
+             <span>Classic</span>
+           </a>
+           <a href="quadratic">
+             <span>Quadratic Formula</span>
+           </a>
+           <a href="pythagorean">
+             <span>Pythagorean</span>
+           </a>
+           <a href="bmi">
+            <span>BMI</span>
+          </a>
+           <a href="https://www.khoawack.com">
+  
+             <span>Contact</span>
+           </a>
+         </div>
+     </body>
+         
+    <div class = "titles" data-text="CALCULATOR"></div>
+     
+    {% block content %}
+
+    {% endblock %}
+         
+     </body>
+</html>

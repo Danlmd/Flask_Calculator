@@ -1,0 +1,20 @@
+{% extends "layout.html"%}
+{% block content %}
+<div class="frame">
+    <form action="{{ url_for('pythagorean')}}" method="post">
+        <h2>Pythagorean Theorem</h2>
+        <br>
+        <input type ="text" placeholder="Enter a" name = "a">
+        <br>
+        <input type ="text" placeholder="Enter b" name = "b">
+        <br>
+        <input type ="text" placeholder="Enter c" name = "c">
+        <br>
+        <p> {{prediction_text}}</p>
+        <div class = "bigbutton">
+            <input class="button-29" type ="submit" value = "Calculate" id = "test">
+        </div>
+        
+    </form>
+ </div>  
+{% endblock %}
