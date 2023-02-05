@@ -70,7 +70,7 @@ def bmi(height, weight):
 
 def pythagorean_theorem(a,b,c):
     if (a.lstrip('-+').isnumeric()) and (b.lstrip('-+').isnumeric()) and (c.lstrip('-+').isnumeric()):
-        result = "Please enter only valid 2 numbers"
+        result = "Please enter only 2 valid numbers"
         return result
 
     elif (a.lstrip('-+').isnumeric()) and (b.lstrip('-+').isnumeric()) and (c == ""):
