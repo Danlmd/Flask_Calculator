@@ -1,6 +1,7 @@
 # Information
 Calculator web application made using Python and Flask framework in addition with CSS and HTML. Aside from regular calculations it is able to calculate BMI (body mass index), quadratic formula, and pythagorean theorem  
-[Link to website](https://calculator-q9mf.onrender.com/classic)
+[Link to website](https://calculator-q9mf.onrender.com/classic)  
+Hosted using render
 
 ## Requirements
 click==8.1.3  
